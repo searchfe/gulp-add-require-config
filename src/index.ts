@@ -1,0 +1,1 @@
+export { addRequireConfig } from './addRequireConfig';
