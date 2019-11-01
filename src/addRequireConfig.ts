@@ -36,6 +36,7 @@ export function addRequireConfig (option: OptionType) {
         }
     });
 }
+
 interface OptionType {
     mainJs?: string;
     /** 线上部署地址 如/se/static/molecules/toptip/ */
