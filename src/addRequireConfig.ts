@@ -1,5 +1,5 @@
 import { File } from 'gulp-util';
-import { basename, relative, resolve } from 'path';
+import { basename, relative } from 'path';
 const Transform = require('readable-stream').Transform;
 
 /** 解析所有文件的moduleID, 生成config后插到入口文件的头部 */
