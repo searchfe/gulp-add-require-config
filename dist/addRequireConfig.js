@@ -16,10 +16,12 @@ function addRequireConfig(option) {
                 var relativePath = path_1.relative(option.sourceDir, file.path);
                 var touchModuleId = file.contents.toString().match(/define\(["']([0-9a-zA-Z@_\-/]+)["']/g);
                 var bundlePath_1 = option.deloyDir + relativePath.replace(/.js$/, '');
-                touchModuleId.map(function (item) {
-                    var moduleId = item.replace(/^define\("/, '').replace(/"$/, '');
-                    pathConfig[moduleId] = bundlePath_1;
-                });
+                if (touchModuleId) {
+                    touchModuleId.map(function (item) {
+                        var moduleId = item.replace(/^define\(["']/, '').replace(/["']$/, '');
+                        pathConfig[moduleId] = bundlePath_1;
+                    });
+                }
             }
             else {
                 mainFile = file;
