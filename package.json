@@ -1,6 +1,6 @@
 {
   "name": "gulp-add-require-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gulp-add-require-config",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
