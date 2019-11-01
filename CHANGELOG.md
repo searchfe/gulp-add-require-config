@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/searchfe/gulp-add-require-config/compare/v1.0.0...v1.1.0) (2019-11-01)
+
+
+### Bug Fixes
+
+* eesolve conflicts ([22a9d5c](https://github.com/searchfe/gulp-add-require-config/commit/22a9d5ce65e7765881d08430767bb4b356ce017c))
+
+
+### Features
+
+* modify the version ([b6ca933](https://github.com/searchfe/gulp-add-require-config/commit/b6ca9331443f8f1e7fe1c425fced2c78fc29300f))
+
 # 1.0.0 (2019-11-01)
 
 
