@@ -11,6 +11,7 @@ describe('addRequireConfig Test', () => {
             .pipe(
                 addRequireConfig({
                     mainJs: 'main.js',
+                    baseUrl: 'xxx',
                     deloyDir: '//xxx/xx/',
                     sourceDir: path.resolve('test')
                 })

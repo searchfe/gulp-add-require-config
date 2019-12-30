@@ -16,6 +16,7 @@ gulp.src(['src/static/**/*.js'])
     addRequireConfig({
         // 指向入口文件
         mainJs: 'main.js',
+        baseUrl: 'xxx',
         // 文件部署路径
         deloyDir: '//xxx/xxx/',
         sourceDir: path.resolve('src')
@@ -44,7 +45,7 @@ export default class test {
 
 // after
 ```bash
-require.config({paths:{"test/a_556240b":"//xxx/xx/assert/bundle_xxxxxxx","test/b_fd483c4":"//xxx/xx/assert/bundle_xxxxxxx"}});
+require.config({baseUrl:'xxx',paths:{"test/a_556240b":"//xxx/xx/assert/bundle_xxxxxxx","test/b_fd483c4":"//xxx/xx/assert/bundle_xxxxxxx"}});
 import { a } from './a';
 import { b } from './b';
 export default class test {

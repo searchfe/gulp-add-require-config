@@ -29,7 +29,7 @@ export function addRequireConfig (option: OptionType) {
         },
         // 将pathConfig对象中的moduleId打印成config文件，塞入主文件main.js
         flush (callback) {
-            const finalConfig = 'require.config({paths:' + JSON.stringify(pathConfig) + '});\n';
+            const finalConfig = 'require.config({baseUrl:' + option.baseUrl + ',paths:' + JSON.stringify(pathConfig) + '});\n';
             mainFile.contents = Buffer.from(finalConfig + mainFile.contents.toString());
             this.push(mainFile);
             callback();
@@ -39,6 +39,7 @@ export function addRequireConfig (option: OptionType) {
 
 interface OptionType {
     mainJs?: string;
+    baseUrl?: string;
     /** 线上部署地址 如/se/static/molecules/toptip/ */
     deloyDir: string;
     /** 编译前脚本路径，用于计算文件相对位置。得出'./static/script/a.js'后与deployDir拼接 */
