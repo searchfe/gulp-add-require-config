@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/searchfe/gulp-add-require-config/compare/v1.1.0...v1.2.0) (2019-12-30)
+
+
+### Features
+
+* add baseUrl to config ([557450c](https://github.com/searchfe/gulp-add-require-config/commit/557450c99a6e0090bd217db96e0b65391ddef168))
+
 # [1.1.0](https://github.com/searchfe/gulp-add-require-config/compare/v1.0.0...v1.1.0) (2019-11-01)
 
 
